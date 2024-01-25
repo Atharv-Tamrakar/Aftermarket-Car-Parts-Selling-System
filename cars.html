@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Parts Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Car Parts Store</h1>
+</header>
+
+<section>
+    <div class="product">
+        <h2>Brake Pads</h2>
+        <p>High-quality brake pads for smooth and safe braking.</p>
+        <p>Price: $29.99</p>
+        <button onclick="addToCart('Brake Pads', 29.99)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <h2>Oil Filter</h2>
+        <p>Premium oil filter for effective engine protection.</p>
+        <p>Price: $9.99</p>
+        <button onclick="addToCart('Oil Filter', 9.99)">Add to Cart</button>
+    </div>
+
+    <!-- Add more product divs as needed -->
+
+</section>
+
+<script>
+    function addToCart(productName, price) {
+        alert(`Added ${productName} to cart. Total Price: $${price}`);
+        // You can implement a more sophisticated cart functionality using JavaScript and possibly AJAX.
+    }
+</script>
+
+</body>
+</html>
